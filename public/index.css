@@ -1,0 +1,26 @@
+body{
+    overflow-x: hidden;
+}
+/* ==========Header=========== */
+.header
+{
+    background-image: url("imgs/banner.png");
+    margin-top: 80px;
+}
+.header-text
+{
+    padding: 100px;
+    margin-top: 150px;
+    font-family: 'Tw Cen MT', sans-serif;
+    text-align: justify;
+}
+/* ==========Header=========== */
+
+/* ==========Services=========== */
+
+/* ==========Services=========== */
+
+/* ==========About Us=========== */
+
+/* ==========About Us=========== */
+
