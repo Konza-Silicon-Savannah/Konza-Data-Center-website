@@ -13,6 +13,15 @@
 
     <!-- CSS file -->
     <link href="../index.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+
     <title>KNDC</title>
 </head>
 
@@ -55,17 +64,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
+                    <li>
+                        <!-- <a class="nav-item" href="{{ route('cart.list') }}">
+                            <i class="bi bi-cart3"><span >{{ Cart::getTotalQuantity()}}</span></i>
+
+                        </a> -->
+                        <button type="button" class="btn btn-success position-relative">
+                            <i class="bi bi-cart3">
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    {{ Cart::getTotalQuantity()}}
+
+                                </span>
+                            </i>
+                        </button>
+                    </li>
 
                 </ul>
             </div>
         </div>
     </nav>
     <!-- ==========Navbar=========== -->
-
+    
     @yield('content')
     <!-- ==========Footer=========== -->
 
-    <footer class="py-2 my-4 mx-0 bg-light">
+    <footer class="py-2 my-4 mx-0 bg-light mt-5">
         <ul class="nav justify-content-center border-bottom pb-3">
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cloud services</a></li>
@@ -83,11 +106,20 @@
     </footer>
     <!-- ==========Footer=========== -->
 
-
+    <script>
+    @if(Session::has('message'))
+    toastr.options = {
+        "closeButton": true,
+        "progressBar": true
+    }
+    toastr.success("{{ session('message') }}");
+    @endif
+</script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 
 </body>
+
 
 </html>

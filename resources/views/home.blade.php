@@ -24,17 +24,19 @@
         <h1>Our Services</h1>
         <p>~What do we offer~</p>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <div class="card">
+                    <img class="card-img-top" src="../imgs/clouds.jpg" height="180px"/>
                     <div class="card-body">
                         <h3>Cloud Storage</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <a href="{{url('cloud')}}" class="btn btn-primary">Read More</a>
                         <a href="#" class="btn btn-success">Subscribe</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
+            <img class="card-img-top" src="../imgs/server.jpg" height="180px"/>
                 <div class="card">
                     <div class="card-body">
                         <h3>Colocation</h3>
@@ -44,13 +46,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
+            <img class="card-img-top" src="../imgs/domain.jpg" height="180px"/>
                 <div class="card">
                     <div class="card-body">
                         <h3>Web hosting</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">Read More</a>
                         <a href="#" class="btn btn-success">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+            <img class="card-img-top" src="../imgs/development.jpg" height="180px"/>
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Web Development</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-success">Explore</a>
                     </div>
                 </div>
             </div>
@@ -155,22 +168,49 @@
 <!-- ==========Testimonials=========== -->
 
 <!-- ==========Contact Us=========== -->
-<div class="container">
+<div class="container mt-5">
     <div class="row text-center">
         <h1>Contact Us</h1>
     </div>
+
     <div class="row">
         <div class="col-md-6">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+            <!-- contact Us form -->
+            <form action="" method="">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="John Doe">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send</button>
+            </form>
+             <!-- contact Us form -->
+        </div>
+        <div class="col-md-6 p-5">
+            <h6 style="color:#008234;">PHONE NUMBER</h6>
+            <a>+254700515151</a>
+            <h6 style="color:#008234;">EMAIL ADDRESS</h6>
+            <a>cloud@konza.go.ke</a>
+            <h6 style="color:#008234;">ADDRESS</h6>
+            <p>Konza Technopolis Development Authority 7th floor,
+                <br>
+                Konza Complex Nairobi-Mombasa Road – Konza
+                <br>
+                P. O. Box 1 – 90150
+                <br>
+                Konza Technopolis, Kenya
+            </p>
+
         </div>
     </div>
+
 </div>
 <!-- ==========Contact Us=========== -->
 
