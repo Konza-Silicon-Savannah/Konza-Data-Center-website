@@ -16,8 +16,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" 
-     href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
@@ -27,11 +26,11 @@
 
 <body>
     <!-- ==========Navabar=========== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light pe-5 fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light  pe-5 fixed-top">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="">
-                <img src="../imgs/dc-logo.png" height="60" alt="Konza Technopolis">
+                <img src="../imgs/dc-logo.png" height="30" alt="Konza Technopolis">
                 Konza National Data Center
             </a>
 
@@ -41,14 +40,15 @@
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
+
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Cloud Services</a></li>
+                            <li><a class="dropdown-item" href="{{url('cloud')}}">Cloud Services</a></li>
                             <div class="dropdown-divider"></div>
                             <li><a class="dropdown-item" href="#">Colocation</a></li>
                             <div class="dropdown-divider"></div>
@@ -69,14 +69,16 @@
                             <i class="bi bi-cart3"><span >{{ Cart::getTotalQuantity()}}</span></i>
 
                         </a> -->
-                        <button type="button" class="btn btn-success position-relative">
-                            <i class="bi bi-cart3">
-                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                    {{ Cart::getTotalQuantity()}}
+                        <a class="nav-item" href="{{ route('cart.list') }}">
+                            <button type="button" class="btn btn-success position-relative">
+                                <i class="bi bi-cart3">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        {{ Cart::getTotalQuantity()}}
 
-                                </span>
-                            </i>
-                        </button>
+                                    </span>
+                                </i>
+                            </button>
+                        </a>
                     </li>
 
                 </ul>
@@ -84,20 +86,20 @@
         </div>
     </nav>
     <!-- ==========Navbar=========== -->
-    
+
     @yield('content')
     <!-- ==========Footer=========== -->
 
-    <footer class="py-2 my-4 mx-0 bg-light mt-5">
+    <footer class="py-2 mt-4 mx-0 bg-success mt-5">
         <ul class="nav justify-content-center border-bottom pb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Cloud services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Colocation</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Web hosting</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Cloud services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Colocation</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Web hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
         </ul>
-        <p class="text-center text-muted">
+        <p class="text-center text-white">
             &copy; <script>
                 document.write(new Date().getFullYear())
             </script>
@@ -107,17 +109,19 @@
     <!-- ==========Footer=========== -->
 
     <script>
-    @if(Session::has('message'))
-    toastr.options = {
-        "closeButton": true,
-        "progressBar": true
-    }
-    toastr.success("{{ session('message') }}");
-    @endif
-</script>
+        @if(Session::has('message'))
+        toastr.options = {
+            "closeButton": true,
+            "progressBar": true
+        }
+        toastr.success("{{ session('message') }}");
+        @endif
+    </script>
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <!-- Javascript -->
+    <script src="../index.js"></script>
 
 </body>
 

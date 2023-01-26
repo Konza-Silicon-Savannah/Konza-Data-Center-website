@@ -2,17 +2,18 @@
 
 @section('content')
 <!-- ==========Header=========== -->
-<div class="row header">
+<div class="row header mb-5">
     <div class="col-md-7">
         <div class="container header-text">
             <h1>One Stop Shop for all your cloud needs.</h1>
             <p>
                 Are you in need of web hosting using the conventional cpanel or are you looking for fast, optimized and processor accelearted compute option? Look no further. Konza cloud has all these offerings provisioned for you as easy as pie
             </p>
+            <button class="btn btn-outline-success mt-3">Request a Call Back</button>
         </div>
     </div>
     <div class="col-md-5">
-        <img src="../imgs/woofer.png" height="400px" class="mt-5" />
+        <img src="../imgs/Group 2.png" height="400px" class="mt-5" />
     </div>
 
 </div>
@@ -25,43 +26,40 @@
         <p>~What do we offer~</p>
         <div class="row">
             <div class="col-md-3">
-                <div class="card">
+                <div class="card shadow">
                     <img class="card-img-top" src="../imgs/clouds.jpg" height="180px"/>
                     <div class="card-body">
                         <h3>Cloud Storage</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="{{url('cloud')}}" class="btn btn-primary">Read More</a>
-                        <a href="#" class="btn btn-success">Subscribe</a>
+                        <a href="{{url('cloud')}}" class="btn btn-success">Subscribe</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
             <img class="card-img-top" src="../imgs/server.jpg" height="180px"/>
-                <div class="card">
+                <div class="card shadow">
                     <div class="card-body">
                         <h3>Colocation</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
                         <a href="#" class="btn btn-success">Subscribe</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
             <img class="card-img-top" src="../imgs/domain.jpg" height="180px"/>
-                <div class="card">
+                <div class="card shadow">
                     <div class="card-body">
                         <h3>Web hosting</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
                         <a href="#" class="btn btn-success">Subscribe</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
-            <img class="card-img-top" src="../imgs/development.jpg" height="180px"/>
-                <div class="card">
+            <img class="card-img-top" src="../imgs/email.png" height="180px"/>
+                <div class="card shadow">
                     <div class="card-body">
-                        <h5>Web Development</h5>
+                        <h3>Email Hosting</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-success">Explore</a>
                     </div>
@@ -83,14 +81,13 @@
         <div class="col-md-6">
             <img src="../imgs/kndc.jpg" class="img-fluid" />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" style="  line-height: 2;">
             <p>
                 Konza National Data Center and Smart City facilities project is being implemented by the Ministry of ICT through Konza Technopolis Development Authority (KoTDA). The project is being executed as a priority for Phase I of Konza Technopolis implementation that will ensure that Konza is able to carry out the core functions of a smart city. In addition, it will be a key enabler towards Kenya’s digital economy and is modelled to support data, voice, video, services, systems and applications.
             </p>
             <p>
                 The implementation of Konza National Data Center has been completed and operationalized to offer high end cloud services to private and government institutions. The State-of-the-art Tier III Data Center was designed and implemented in compliance with international standards and best practices such as TIA 942:2017 Accreditation, LEED Gold (USGBC) and Uptime Institute Tier III Certified. The implementation of ISO 27001: Information Security Management & ITIL
             </p>
-            <a>Read more</a>
         </div>
     </div>
     <div class="row mt-4">
@@ -145,21 +142,24 @@
         <p>~What they say~</p>
     </div>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner px-5 mx-5">
-            <div class="carousel-item active">
+        <div class="carousel-inner px-5 mx-5 fs-5">
+            <div class="carousel-item active ">
                 <p class="text-center ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
+                <p class="fst-italic text-center">anonymous</p>
+            </div>
+            <div class="carousel-item ">
+                <p class="text-center ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="fst-italic text-center">anonymous</p>
             </div>
             <div class="carousel-item">
                 <p class="text-center ">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-            </div>
-            <div class="carousel-item">
-                <p class="text-center ">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+                <p class="fst-italic text-center">anonymous</p>
             </div>
         </div>
 
@@ -168,12 +168,12 @@
 <!-- ==========Testimonials=========== -->
 
 <!-- ==========Contact Us=========== -->
-<div class="container mt-5">
+<div class="container mt-5 ">
     <div class="row text-center">
         <h1>Contact Us</h1>
     </div>
 
-    <div class="row">
+    <div class="row mx-3">
         <div class="col-md-6">
             <!-- contact Us form -->
             <form action="" method="">

@@ -1,18 +1,30 @@
 body{
     overflow-x: hidden;
+    font-family: 'Tw Cen MT', sans-serif;
 }
+/* ==========Navbar=========== */
+.navbar{
+    transition: all 0.5s;
+    
+}
+
+.scrollednavbar{
+  background-color: #f5f9f6; 
+  color: white !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========Navbar=========== */
 /* ==========Header=========== */
 .header
 {
-    background-image: url("imgs/banner.png");
-    margin-top: 80px;
+    /* background-image: url("imgs/banner.png"); */
+    margin-top: 50px;
 }
 .header-text
 {
     padding: 100px;
-    margin-top: 150px;
-    font-family: 'Tw Cen MT', sans-serif;
-    text-align: justify;
+    text-align: center;
 }
 /* ==========Header=========== */
 
@@ -23,4 +35,24 @@ body{
 /* ==========About Us=========== */
 
 /* ==========About Us=========== */
+
+/* ==========Product card=========== */
+.productcard
+{
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+.btncard
+{
+    color: white;
+    background-color: #008234;
+    border-radius: 20px;
+    border: 0px;
+}
+/* ==========Product card=========== */
+
+
+
+
 

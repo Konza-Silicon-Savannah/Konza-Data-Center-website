@@ -4,8 +4,8 @@
 
 <div class="" style="margin-top: 100px;">
     <div class="container px-6 mx-auto">
-        <div class="flex justify-center my-6">
-            <div class="d-flex flex-column  w-100 p-5 bg-white shadow-lg col-md-8">
+        <div class="flex justify-center my-5">
+            <div class="d-flex flex-column  w-100 p-5 bg-white shadow col-md-8 col-xs-12">
                 @if ($message = Session::get('success'))
                 <div class="p-1 mb-3 bg-success rounded">
                     <p class="text-white">{{ $message }}</p>
@@ -13,24 +13,14 @@
                 @endif
                 <h3 class="font-weight-bold">Cart</h3>
                 <div class="flex-1">
-                    <table class="table w-100">
+                    <table class="table">
                         <thead>
                             <tr class="text-uppercase">
-                                <!-- <th class="hidden md:table-cell"></th>
-                                <th class="text-left">Name</th>
-                                <th class="pl-5 text-left lg:text-right lg:pl-0">
-                                    <span class="lg:hidden" title="Quantity">Qtd</span>
-                                    <span class="hidden lg:inline">Quantity</span>
-                                </th>
-                                <th class="hidden text-right md:table-cell"> price</th>
-                                <th class="hidden text-right md:table-cell"> Remove </th> -->
+                              
                                 <th class="text-left">Service</th>
                                 <th class="text-left">Type</th>
                                 <th class="text-left">Description</th>
-                                <th class="pl-5 text-left">
-                                    <!-- <span class="col-lg" title="Quantity">Qtd</span> -->
-                                    <span class="hidden">Quantity</span>
-                                </th>
+                                <th class="pl-5 text-left">Quantity</th>
                                 <th class="hidden text-right"> </th>
                             </tr>
                         </thead>
@@ -44,7 +34,7 @@
                                 </td> -->
                                 <td>
 
-                                    <p class="mb-2  text-dark fw-bold">{{$item->service }}</p>
+                                    <p class="mb-2 text-dark fw-bold">{{$item->service }}</p>
 
 
                                 </td>
@@ -54,7 +44,7 @@
                                 <td>
                                     <p class="mb-2">{{ $item->description }}</p>
                                 </td>
-                                <td class="justify-center mt-6 no-wrap ">
+                                <td class="justify-center mt-6 ">
                                     <div class="h-10 w-20">
                                         <div class="relative w-100 h-8">
 
@@ -87,11 +77,17 @@
 
                         </tbody>
                     </table>
-                    <div>
-                        <form action="{{ route('cart.clear') }}" method="POST">
-                            @csrf
-                            <button class="btn btn-outline-danger">Clear Carts</button>
-                        </form>
+                    <div class="row">
+                        <div class=" col-xs-6 col-sm-6 col-md-6 justify-content-start d-flex">
+                            <form action="{{ route('cart.clear') }}" method="POST">
+                                @csrf
+                                <button class="btn btn-outline-danger">Clear Carts</button>
+                            </form>
+                        </div>
+                        <div class="col-xs-6 col-md-6 col-sm-6 justify-content-end d-flex">
+                            <a  href="{{ route('products. checkout') }}"><button class="btn btn-success">Checkout</button></a>
+                        </div>
+                       
                     </div>
 
 

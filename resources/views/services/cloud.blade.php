@@ -2,13 +2,13 @@
 
 @section('content')
 <!-- ==========Header=========== -->
-<div class="row header p-4 text-center">
-    <h3>CLOUD SERVICES</h3>
+<div class="row  p-4 text-center" style="margin-top: 100px;">
+    <h3 style="color:#008234;">CLOUD SERVICES</h3>
 </div>
 <!-- ==========Header=========== -->
 
 <!-- ==========About=========== -->
-<div class="container mt-3">
+<div class="container mt-2">
     <p class="text-justified">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
@@ -17,75 +17,58 @@
 
 <!-- ==========Products=========== -->
 <div class="container">
-    <h5 class="text-center">Cloud products</h5>
-    <!-- ==========VMS=========== -->
-    <h6>Virtual Machine</h6>
-    <div class="row">
-        @foreach($vms as $vm)
-        <div class="col-md-2">
-            <div class="card mb-5 p-3">
-                <h5>{{$vm->name}} </h5>
-                <p>{{$vm->description}} </p>
-                <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <input type="hidden" value="{{ $vm->id }}" name="id">
-                    <input type="hidden" value="{{ $vm->service }}" name="service">
-                    <input type="hidden" value="{{ $vm->name }}" name="name">
-                    <input type="hidden" value="{{ $vm->description }}" name="description">
-                    <input type="hidden" value="1" name="quantity">
-                    <button class="px-4 py-1 btn btn-outline-success">Add To Cart</button>
-                </form>
-            </div>
+    <h5 class="fs-4">Select Your perfect flavor:</h5>
+    <nav class="mt-4">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <a class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
+                All Cloud Products
+            </a>
+            <a class="nav-link" id="nav-vm-tab" data-bs-toggle="tab" href="#nav-vm" role="tab" aria-controls="nav-vm" aria-selected="false">
+                Virtual Machines
+            </a>
+            <a class="nav-link" id="nav-bm-tab" data-bs-toggle="tab" href="#nav-bm" role="tab" aria-controls="nav-bm" aria-selected="false">
+                Bare Metal Services
+            </a>
+            <a class="nav-link" id="nav-vdi-tab" data-bs-toggle="tab" href="#nav-vdi" role="tab" aria-controls="nav-vdi" aria-selected="false">
+                Virtual Desktop Infrastructure
+            </a>
+            <a class="nav-link" id="nav-webh-tab" data-bs-toggle="tab" href="#nav-webh" role="tab" aria-controls="nav-webh" aria-selected="false">
+                Web Hosting
+            </a>
         </div>
-        @endforeach
-    </div>
-    <!-- ==========VMS=========== -->
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+            <!-- ==========VMS=========== -->
+            @include('services.vms')
+            <!-- ==========VMS=========== -->
 
-    <!-- ==========BMS=========== -->
-    <h6>Bare Metal Service</h6>
-    <div class="row">
-        @foreach($bms as $bms)
-        <div class="col-md-2">
-            <div class="card mb-5 p-3">
-                <h5>{{$bms->name}} </h5>
-                <p>{{$bms->description}} </p>
-                <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <input type="hidden" value="{{ $bms->id }}" name="id">
-                    <input type="hidden" value="{{ $bms->service }}" name="service">
-                    <input type="hidden" value="{{ $bms->name }}" name="name">
-                    <input type="hidden" value="{{ $bms->description }}" name="description">
-                    <input type="hidden" value="1" name="quantity">
-                    <button class="px-4 py-1 btn btn-outline-success">Add To Cart</button>
-                </form>
-            </div>
+
+            <!-- ==========BMS=========== -->
+            @include('services.bms')
+            <!-- ==========BMS=========== -->
+
+
+            <!-- ==========VDIs=========== -->
+            @include('services.vdi')
+            <!-- ==========VDIs=========== -->
+
+             <!-- ==========webhosting=========== -->
+             @include('services.webh')
+            <!-- ==========Webhosting=========== -->
         </div>
-        @endforeach
-    </div>
-    <!-- ==========BMS=========== -->
-
-    <!-- ==========VDIs=========== -->
-    <h6>Virtual Desktop Infrastructure</h6>
-    <div class="row">
-        @foreach($vdis as $vdi)
-        <div class="col-md-2">
-            <div class="card mb-5 p-3">
-                <h5>{{$vdi->name}} </h5>
-                <p>{{$vdi->description}} </p>
-                <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">
-                    @csrf
-                    <input type="hidden" value="{{ $vdi->id }}" name="id">
-                    <input type="hidden" value="{{ $vdi->service }}" name="service">
-                    <input type="hidden" value="{{ $vdi->name }}" name="name">
-                    <input type="hidden" value="{{ $vdi->description }}" name="description">
-                    <input type="hidden" value="1" name="quantity">
-                    <button class="px-4 py-1 btn btn-outline-success">Add To Cart</button>
-                </form>
-            </div>
+        <div class="tab-pane fade" id="nav-vm" role="tabpanel" aria-labelledby="nav-vm-tab">
+            @include('services.vms')
         </div>
-        @endforeach
+        <div class="tab-pane fade" id="nav-bm" role="tabpanel" aria-labelledby="nav-bm-tab">
+            @include('services.bms')
+        </div>
+        <div class="tab-pane fade" id="nav-vdi" role="tabpanel" aria-labelledby="nav-vdi-tab">
+            @include('services.vdi')
+        </div> <div class="tab-pane fade" id="nav-webh" role="tabpanel" aria-labelledby="nav-webh-tab">
+            @include('services.webh')
+        </div>
     </div>
-
 </div>
 <!-- ==========Products=========== -->
 
