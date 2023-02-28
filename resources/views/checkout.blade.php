@@ -71,7 +71,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                <a href=" {{ route('cart.list') }}" style="align-items: flex-end;"><button class="btn btn-warning">Edit cart</button></a>
+                <a href=" {{ route('cart.list') }}" style="align-items: flex-end;">Edit cart</a>
             </div>
 
             <div class="mb-3">

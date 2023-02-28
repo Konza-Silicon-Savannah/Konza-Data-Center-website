@@ -9,7 +9,24 @@
             <p>
                 Are you in need of web hosting using the conventional cpanel or are you looking for fast, optimized and processor accelearted compute option? Look no further. Konza cloud has all these offerings provisioned for you as easy as pie
             </p>
-            <button class="btn btn-outline-success mt-3">Request a Call Back</button>
+            <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#callbackmodal">
+                Request a Call Back
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="callbackmodal" tabindex="-1" aria-labelledby="callbackmodalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="callbackmodalLabel">Request a call back</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           @include('contactform')
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="col-md-5">
@@ -27,7 +44,7 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="card shadow">
-                    <img class="card-img-top" src="../imgs/clouds.jpg" height="180px"/>
+                    <img class="card-img-top" src="../imgs/clouds.jpg" height="180px" />
                     <div class="card-body">
                         <h3>Cloud Storage</h3>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -36,7 +53,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-            <img class="card-img-top" src="../imgs/server.jpg" height="180px"/>
+                <img class="card-img-top" src="../imgs/server.jpg" height="180px" />
                 <div class="card shadow">
                     <div class="card-body">
                         <h3>Colocation</h3>
@@ -46,7 +63,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-            <img class="card-img-top" src="../imgs/domain.jpg" height="180px"/>
+                <img class="card-img-top" src="../imgs/domain.jpg" height="180px" />
                 <div class="card shadow">
                     <div class="card-body">
                         <h3>Web hosting</h3>
@@ -56,7 +73,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-            <img class="card-img-top" src="../imgs/email.png" height="180px"/>
+                <img class="card-img-top" src="../imgs/email.png" height="180px" />
                 <div class="card shadow">
                     <div class="card-body">
                         <h3>Email Hosting</h3>
@@ -123,11 +140,11 @@
         <h4 class="text-center">Certifications</h4>
         <div class="row text-center">
             <div class="col-xs-12 col-md-12">
-                <img src="../imgs/tia.jfif" height="150px" width="150px" class="m-2" />
+                <img src="../imgs/tia.jfif" height="100px" width="100px" class="m-2" />
 
-                <img src="../imgs/leed.jfif" height="150px" width="150px" class="m-2" />
+                <img src="../imgs/leed.jfif" height="100px" width="100px" class="m-2" />
 
-                <img src="../imgs/tier3.png" height="150px" width="150px" class="m-2" />
+                <img src="../imgs/tier3.png" height="100px" width="100px" class="m-2" />
             </div>
         </div>
     </div>
@@ -176,28 +193,14 @@
     <div class="row mx-3">
         <div class="col-md-6">
             <!-- contact Us form -->
-            <form action="" method="">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="John Doe">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Send</button>
-            </form>
-             <!-- contact Us form -->
+            @include('contactform')
+            <!-- contact Us form -->
         </div>
         <div class="col-md-6 p-5">
             <h6 style="color:#008234;">PHONE NUMBER</h6>
-            <a>+254700515151</a>
+            <a href="tel:+254700515151">+254700515151</a>
             <h6 style="color:#008234;">EMAIL ADDRESS</h6>
-            <a>cloud@konza.go.ke</a>
+            <a href="mailto:cloud@konza.go.ke?cc=secondemail@example.com, anotheremail@example.com,">cloud@konza.go.ke</a>
             <h6 style="color:#008234;">ADDRESS</h6>
             <p>Konza Technopolis Development Authority 7th floor,
                 <br>

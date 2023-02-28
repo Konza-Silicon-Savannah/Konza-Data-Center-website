@@ -36,7 +36,9 @@ class CartController extends Controller
 
         // $data->save();
 
-        return redirect()->route('products.cloud')->with('message','Product is Added to Cart Successfully');
+        // return redirect()->route('products.cloud')->with('message','Product is Added to Cart Successfully');
+        return redirect()->back()->with('message','Product is Added to Cart Successfully');
+
 
     }
     public function updateCart(Request $request)

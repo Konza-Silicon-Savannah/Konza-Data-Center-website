@@ -13,17 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('carts', function (Blueprint $table) {
-            $table->integer('id');
-            $table->string('service');
+        Schema::create('messages', function (Blueprint $table) {
+            $table->id();
             $table->string('name');
-            $table->string('description');
-            $table->integer('quantity');           
+            $table->string('organization');
+            $table->string('email');
+            $table->longText('message');
             $table->timestamps();
         });
     }
 
-    
     /**
      * Reverse the migrations.
      *
@@ -31,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('carts');
+        Schema::dropIfExists('messages');
     }
 };

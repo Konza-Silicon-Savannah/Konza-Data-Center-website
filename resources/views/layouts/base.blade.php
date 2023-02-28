@@ -29,7 +29,7 @@
     <nav class="navbar navbar-expand-lg navbar-light  pe-5 fixed-top">
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="">
+            <a class="navbar-brand" href="{{route('home')}}">
                 <img src="../imgs/dc-logo.png" height="30" alt="Konza Technopolis">
                 Konza National Data Center
             </a>
@@ -40,7 +40,7 @@
             <div class="collapse navbar-collapse " id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,9 +50,12 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <li><a class="dropdown-item" href="{{url('cloud')}}">Cloud Services</a></li>
                             <div class="dropdown-divider"></div>
-                            <li><a class="dropdown-item" href="#">Colocation</a></li>
+                            <li><a class="dropdown-item" href="{{route('products.colocation')}}">Colocation</a></li>
                             <div class="dropdown-divider"></div>
-                            <li><a class="dropdown-item" href="#">Web hosting</a></li>
+                            <li><a class="dropdown-item" href="#">Domain hosting</a></li>
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item" href="#">Email hosting</a></li>
+
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -92,9 +95,9 @@
 
     <footer class="py-2 mt-4 mx-0 bg-success mt-5">
         <ul class="nav justify-content-center border-bottom pb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Cloud services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Colocation</a></li>
+            <li class="nav-item"><a href="{{route('home')}}" class="nav-link px-2 text-white">Home</a></li>
+            <li class="nav-item"><a href="{{route('products.cloud')}}" class="nav-link px-2 text-white">Cloud services</a></li>
+            <li class="nav-item"><a href="{{route('products.colocation')}}" class="nav-link px-2 text-white">Colocation</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Web hosting</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>

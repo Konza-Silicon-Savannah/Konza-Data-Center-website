@@ -21,9 +21,12 @@ use App\Http\Controllers\ProductController;
      return view('home');
 })->name('home');
 Route::get('/cloud', [ProductController::class,'cloudServices'])->name('products.cloud');
+Route::get('/colocation', [ProductController::class,'colocation'])->name('products.colocation');
+
 Route::get('/checkout', [ProductController::class,'checkoutForm'])->name('products. checkout');
 Route::post('/checkout', [ProductController::class,'checkoutSubmit']);
-
+Route::get('sendMail',[ProductController::class,'checkoutSubmit']);
+ Route::post();
 
 Route::get('products', [ProductController::class, 'productList'])->name('products.list');
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');

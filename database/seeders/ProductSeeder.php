@@ -144,6 +144,32 @@ class ProductSeeder extends Seeder
                 'description' => '1.5GB Memory, 150GB System Disk, 600GB Bandwidth ',
                 'price' => 16000,
             ],
+            [
+                'service' => 'Colocation',
+                'name' => '1U ',
+                'description' => 'n/a ',
+                'price' => 0,
+            ],[
+                'service' => 'Colocation',
+                'name' => '2U ',
+                'description' => 'n/a ',
+                'price' => 0,
+            ],[
+                'service' => 'Colocation',
+                'name' => 'Quarter Rack ',
+                'description' => 'n/a',
+                'price' => 0,
+            ],[
+                'service' => 'Colocation',
+                'name' => 'Half Rack ',
+                'description' => 'n/a ',
+                'price' => 0,
+            ],[
+                'service' => 'Colocation',
+                'name' => 'Full Rack ',
+                'description' => 'n/a ',
+                'price' => 0,
+            ],
 
         ];
         Product::insert($products);
