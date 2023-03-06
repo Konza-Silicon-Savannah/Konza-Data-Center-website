@@ -26,7 +26,8 @@ Route::get('/colocation', [ProductController::class,'colocation'])->name('produc
 Route::get('/checkout', [ProductController::class,'checkoutForm'])->name('products. checkout');
 Route::post('/checkout', [ProductController::class,'checkoutSubmit']);
 Route::get('sendMail',[ProductController::class,'checkoutSubmit']);
- Route::post();
+
+Route::post('/sendMessage',[ProductController::class,'sendMessage']);
 
 Route::get('products', [ProductController::class, 'productList'])->name('products.list');
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');

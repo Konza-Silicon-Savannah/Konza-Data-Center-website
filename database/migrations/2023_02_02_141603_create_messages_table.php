@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('organization');
             $table->string('email');
             $table->longText('message');
+            $table->integer('status')->default(0);
             $table->timestamps();
         });
     }
