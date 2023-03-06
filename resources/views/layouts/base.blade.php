@@ -22,167 +22,167 @@
 
 
     <title>KNDC</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .navbar .megamenu {
+            padding: 1rem;
+        }
+
+        /* ============ desktop view ============ */
+        @media all and (min-width: 992px) {
+            .navbar .has-megamenu {
+                position: static !important;
+            }
+
+            .navbar .megamenu {
+                /* left: 20%;
+                right: 0; */
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+
+        /* ============ desktop view .end// ============ */
+        /* ============ mobile view ============ */
+        @media(max-width: 991px) {
+
+            .navbar.fixed-top .navbar-collapse,
+            .navbar.sticky-top .navbar-collapse {
+                overflow-y: auto;
+                max-height: 90vh;
+                margin-top: 10px;
+            }
+        }
+
+        /* ============ mobile view .end// ============ */
+    </style>
 </head>
 
 <body>
     <!-- ==========Navabar=========== -->
-    <nav class="navbar navbar-expand-lg navbar-light  pe-5 fixed-top">
-        <div class="container-fluid">
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-light  pe-5 fixed-top">
 
-            <a class="navbar-brand" href="{{route('home')}}">
-                <img src="../imgs/dc-logo.png" height="30" alt="Konza Technopolis">
-                Konza National Data Center
-            </a>
+            <div class="container-fluid">
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                        </a>
+                <a class="navbar-brand" href="{{route('home')}}">
+                    <img src="../imgs/dc-logo.png" height="30" alt="Konza Technopolis">
+                    Konza National Data Center
+                </a>
 
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{url('cloud')}}">Cloud Services</a></li>
-                            <div class="dropdown-divider"></div>
-                            <li><a class="dropdown-item" href="{{route('products.colocation')}}">Colocation</a></li>
-                            <div class="dropdown-divider"></div>
-                            <li><a class="dropdown-item" href="#">Domain hosting</a></li>
-                            <div class="dropdown-divider"></div>
-                            <li><a class="dropdown-item" href="#">Email hosting</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
 
-                    <li class="nav-item dropdown  position-static">
-                    <!-- data-bs-auto-close="outside" -->
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" >Megamenu</a>
-                        <div class="dropdown-menu shadow">
-                            <div class="mega-content px-0 w-10">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-12 col-sm-4 col-md-3 py-4">
-                                            <h5>Title</h5>
-                                            <div class="list-group">
-                                                <a class="list-group-item" href="#">Mega Menu Link</a>
-                                                <a class="list-group-item" href="#">Mega Menu Link</a>
-                                                <a class="list-group-item" href="#">Mega Menu Link</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4 col-md-3 py-4">
-                                            <h5>Card Title</h5>
-                                            <div class="card">
-                                                <img src="img/banner-image.jpg" class="img-fluid" alt="image">
-                                                <div class="card-body">
-                                                    <p class="card-text">Description goes here...</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-sm-4 col-md-3 py-4">
-                                            <h5>Title</h5>
-                                            <p>Description goes here...</p>
-                                        </div>
-                                        <div class="col-12 col-sm-12 col-md-3 py-4">
-                                            <h5>Title</h5>
-                                            <div class="list-group">
-                                                <a class="list-group-item" href="#">Menu Link</a>
-                                                <a class="list-group-item" href="#">Menu Link</a>
-                                                <a class="list-group-item" href="#">Menu Link</a>
-                                            </div>
-                                        </div>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="{{url('cloud')}}">Cloud Services</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="{{route('products.colocation')}}">Colocation</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Domain hosting</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Email hosting</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Solutions</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item dropdown has-megamenu">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services </a>
+                            <div class="dropdown-menu megamenu" role="menu">
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Cloud Services</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Virtual Machines</a></li>
+                                                <li><a href="#">Bare Metal Servers</a></li>
+                                                <li><a href="#">Virtual Desktop Infrastructre</a></li>
+                                                <li><a href="#">Web Hostng</a></li>
+                                                <li><a href="#">Video Conferencing Infrastructure</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Data Center Colocation</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Colocation</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">Backup as a Service</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-            <li class="nav-item dropdown has-megamenu">
-                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Mega menu </a>
-                    <div class="dropdown-menu megamenu" role="menu">
-                        <div class="row g-3">
-                            <div class="col-lg-3 col-12">
-                                <div class="col-megamenu">
-                                    <h6 class="title">Title Menu One</h6>
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                    </ul>
-                                </div> <!-- col-megamenu.// -->
-                            </div><!-- end col-3 -->
-                            <div class="col-lg-3 col-12">
-                                <div class="col-megamenu">
-                                    <h6 class="title">Title Menu Two</h6>
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                    </ul>
-                                </div> <!-- col-megamenu.// -->
-                            </div><!-- end col-3 -->
-                            <div class="col-lg-3 col-12">
-                                <div class="col-megamenu">
-                                    <h6 class="title">Title Menu Three</h6>
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                    </ul>
-                                </div> <!-- col-megamenu.// -->
-                            </div>
-                            <div class="col-lg-3 col-12">
-                                <div class="col-megamenu">
-                                    <h6 class="title">Title Menu Four</h6>
-                                    <ul class="list-unstyled">
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                        <li><a href="#">Custom Menu</a></li>
-                                    </ul>
-                                </div> <!-- col-megamenu.// -->
-                            </div><!-- end col-3 -->
-                        </div><!-- end row -->
-                    </div> <!-- dropdown-mega-menu.// -->
-                </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
-            </li>
-            <li>
-                <!-- <a class="nav-item" href="{{ route('cart.list') }}">
+                                    <div class="col-lg-3 col-12">
+                                        <div class="col-megamenu">
+                                            <h6 class="title">saas Solutions</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Hospital Management System</a></li>
+                                                <li><a href="#">Contact Center Solution</a></li>
+                                                <li><a href="#">Zimbra Email Solution</a></li>
+                                                <li><a href="#">Revenue Management & Collection System</a></li>
+                                                <li><a href="#">E-Board Solution</a></li>
+                                                <li><a href="#">Custom Menu</a></li>
+                                            </ul>
+                                        </div> <!-- col-megamenu.// -->
+                                    </div><!-- end col-3 -->
+                                </div><!-- end row -->
+                            </div> <!-- dropdown-mega-menu.// -->
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <!-- <a class="nav-item" href="{{ route('cart.list') }}">
                     <i class="bi bi-cart3"><span >{{ Cart::getTotalQuantity()}}</span></i>
 
-                        </a> -->
-                        <a class="nav-item" href="{{ route('cart.list') }}">
-                            <button type="button" class="btn btn-success position-relative">
-                                <i class="bi bi-cart3">
-                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                        {{ Cart::getTotalQuantity()}}
+                </a> -->
+                            <a class="nav-item" href="{{ route('cart.list') }}">
+                                <button type="button" class="btn btn-success position-relative">
+                                    <i class="bi bi-cart3">
+                                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            {{ Cart::getTotalQuantity()}}
 
-                                    </span>
-                                </i>
-                            </button>
-                        </a>
-                    </li>
+                                        </span>
+                                    </i>
+                                </button>
+                            </a>
+                        </li>
 
-                </ul>
+
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+
+    </div>
+
     <!-- ==========Navbar=========== -->
 
     @yield('content')
@@ -196,7 +196,7 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Web hosting</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white" >Login</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Login</a></li>
         </ul>
         <p class="text-center text-white">
             &copy; <script>
@@ -221,7 +221,24 @@
 
     <!-- Javascript -->
     <script src="../index.js"></script>
-
+    <script>
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('hamburger-toggle')) {
+                e.target.children[0].classList.toggle('active');
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function(element) {
+                element.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+        // DOMContentLoaded  end
+    </script>
 </body>
 
 

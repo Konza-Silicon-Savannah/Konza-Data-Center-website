@@ -22,7 +22,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                           @include('contactform')
+                            @include('contactform')
                         </div>
                     </div>
                 </div>
@@ -93,12 +93,17 @@
     <div class="row text-center">
         <h1>About Us</h1>
         <p>~Who are we~</p>
+        <p><span style="font-style: italic;font-weight: bold;">Vision:</span>To be a global technology and innovation hub.</p>
+        <p><span style="font-style: italic;font-weight: bold;">Mission:</span>To develop a sustainable smart city and innovation ecosystem contributing to Kenya’s knowledge-based economy.</p>
+
     </div>
+    
     <div class="row">
         <div class="col-md-6">
             <img src="../imgs/kndc.jpg" class="img-fluid" />
         </div>
         <div class="col-md-6" style="  line-height: 2;">
+            
             <p>
                 Konza National Data Center and Smart City facilities project is being implemented by the Ministry of ICT through Konza Technopolis Development Authority (KoTDA). The project is being executed as a priority for Phase I of Konza Technopolis implementation that will ensure that Konza is able to carry out the core functions of a smart city. In addition, it will be a key enabler towards Kenya’s digital economy and is modelled to support data, voice, video, services, systems and applications.
             </p>
