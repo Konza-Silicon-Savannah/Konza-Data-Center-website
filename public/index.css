@@ -1,6 +1,8 @@
 body{
     overflow-x: hidden;
-    font-family: 'Tw Cen MT', sans-serif;
+    /* font-family: 'Tw Cen MT', sans-serif; */
+    font-family: 'Futura PT', sans-serif;
+                                                
 }
 /* ==========Navbar=========== */
 .navbar{

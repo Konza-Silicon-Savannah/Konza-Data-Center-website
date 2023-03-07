@@ -29,8 +29,6 @@
             box-sizing: border-box;
         }
 
-
-
         .navbar .megamenu {
             padding: 1rem;
         }
@@ -46,6 +44,7 @@
                 right: 0; */
                 width: 100%;
                 margin-top: 0;
+                line-height: 3;
             }
         }
 
@@ -61,6 +60,20 @@
             }
         }
 
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .megamenu:hover {
+            color: #008234;
+
+        }
+
+        .megmenuitems:hover {
+            color: #008234;
+        }
+
         /* ============ mobile view .end// ============ */
     </style>
 </head>
@@ -69,7 +82,6 @@
     <!-- ==========Navabar=========== -->
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-light  pe-5 fixed-top">
-
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="{{route('home')}}">
@@ -83,7 +95,7 @@
                 <div class="collapse navbar-collapse " id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
+                            <a class="nav-link" aria-current="page" href="{{route('home')}}" style="color: black;">Home</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -103,47 +115,48 @@
                             </ul>
                         </li> -->
                         <li class="nav-item dropdown has-megamenu">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"> Services </a>
-                            <div class="dropdown-menu megamenu" role="menu">
-                                <div class="row g-3">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" style="color: black;"> Services </a>
+                            <div class="dropdown-menu megamenu shadow" role="menu">
+                                <div class="row g-3 p-2">
                                     <div class="col-lg-3 col-12">
                                         <div class="col-megamenu">
-                                            <h6 class="title">Cloud Services</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#">Virtual Machines</a></li>
-                                                <li><a href="#">Bare Metal Servers</a></li>
-                                                <li><a href="#">Virtual Desktop Infrastructre</a></li>
-                                                <li><a href="#">Web Hostng</a></li>
-                                                <li><a href="#">Video Conferencing Infrastructure</a></li>
+                                            <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">Cloud Services</a></h5>
+                                            <ul class="list-unstyled ">
+                                                <li><a href="#" class="megmenuitems">Virtual Machines</a></li>
+                                                <li><a href="#" class="megmenuitems">Bare Metal Servers</a></li>
+                                                <li><a href="#" class="megmenuitems">Virtual Desktop Infrastructre</a></li>
+                                                <li><a href="#" class="megmenuitems">Web Hosting</a></li>
+                                                <li><a href="#" class="megmenuitems">Video Conferencing Infrastructure</a></li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
                                     <div class="col-lg-3 col-12">
                                         <div class="col-megamenu">
-                                            <h6 class="title">Data Center Colocation</h6>
+                                            <h5 class="title"><a href="{{route('products.colocation')}}" style="color:#008234;">Data Center Colocation</a></h5>
                                             <ul class="list-unstyled">
-                                                <li><a href="#">Colocation</a></li>
+                                                <li><a href="{{route('products.colocation')}}" class="megmenuitems">Colocation</a></li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
                                     <div class="col-lg-3 col-12">
                                         <div class="col-megamenu">
-                                            <h6 class="title">Backup as a Service</h6>
+                                            <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">Backup as a Service</a></h5>
+
                                             <ul class="list-unstyled">
-                                                <li><a href="#">Custom Menu</a></li>
+                                                <li><a href="#" class="megmenuitems">Custom Menu</a></li>
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
                                     </div>
                                     <div class="col-lg-3 col-12">
                                         <div class="col-megamenu">
-                                            <h6 class="title">saas Solutions</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="#">Hospital Management System</a></li>
-                                                <li><a href="#">Contact Center Solution</a></li>
-                                                <li><a href="#">Zimbra Email Solution</a></li>
-                                                <li><a href="#">Revenue Management & Collection System</a></li>
-                                                <li><a href="#">E-Board Solution</a></li>
-                                                <li><a href="#">Custom Menu</a></li>
+                                            <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">SaaS Solutions</a></h5>
+                                            <ul class="list-unstyled text-black">
+                                                <li><a href="#" class="megmenuitems">Hospital Management System</a></li>
+                                                <li><a href="#" class="megmenuitems">Contact Center Solution</a></li>
+                                                <li><a href="#" class="megmenuitems">Zimbra Email Solution</a></li>
+                                                <li><a href="#" class="megmenuitems">Revenue Management & Collection System</a></li>
+                                                <li><a href="#" class="megmenuitems">E-Board Solution</a></li>
+
                                             </ul>
                                         </div> <!-- col-megamenu.// -->
                                     </div><!-- end col-3 -->
@@ -152,17 +165,13 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#" style="color: black;">About</a>
                         </li>
-                       
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="#" style="color: black;">Contact Us</a>
                         </li>
                         <li>
-                            <!-- <a class="nav-item" href="{{ route('cart.list') }}">
-                    <i class="bi bi-cart3"><span >{{ Cart::getTotalQuantity()}}</span></i>
-
-                </a> -->
                             <a class="nav-item" href="{{ route('cart.list') }}">
                                 <button type="button" class="btn btn-success position-relative">
                                     <i class="bi bi-cart3">
