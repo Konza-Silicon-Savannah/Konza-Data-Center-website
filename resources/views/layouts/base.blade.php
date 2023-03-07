@@ -20,7 +20,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 
-
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="../imgs/dc-logo.png">
     <title>KNDC</title>
     <style type="text/css">
         * {
@@ -117,9 +118,9 @@
                         <li class="nav-item dropdown has-megamenu">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" style="color: black;"> Services </a>
                             <div class="dropdown-menu megamenu shadow" role="menu">
-                                <div class="row g-3 p-2">
+                                <div class="row g-3 ">
                                     <div class="col-lg-3 col-12">
-                                        <div class="col-megamenu">
+                                        <div class="col-megamenu" style="    margin-left: 60px; margin-right: 40px;">
                                             <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">Cloud Services</a></h5>
                                             <ul class="list-unstyled ">
                                                 <li><a href="#" class="megmenuitems">Virtual Machines</a></li>

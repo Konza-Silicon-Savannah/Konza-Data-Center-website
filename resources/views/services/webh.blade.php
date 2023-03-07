@@ -2,7 +2,7 @@
     <h6 class="fw-bold fs-4">Web Hosting</h6>
     @foreach($webhosting as $webhosting)
     <div class="col-md-2">
-        <div class="card mb-5 p-3 productcard shadow">
+        <div class="card mb-5 p-3 productcard shadow d-flex align-items-stretch">
             <h5 class="text-success fw-bold my-3">{{$webhosting->name}} </h5>
             <p class="my-3">{{$webhosting->description}} </p>
             <form action="{{ route('cart.store') }}" method="POST" enctype="multipart/form-data">

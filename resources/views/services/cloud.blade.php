@@ -2,7 +2,7 @@
 
 @section('content')
 <!-- ==========Header=========== -->
-<div class="row  p-4 text-center" style="margin-top: 100px;">
+<div class="row  p-4 text-center" style="margin-top: 50px;">
     <h3 style="color:#008234;">CLOUD SERVICES</h3>
 </div>
 <!-- ==========Header=========== -->
