@@ -91,7 +91,7 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark  pe-5 fixed-top" style="background-color: #008234;font-size: 15px;">
             <div class="container-fluid">
-
+          
                 <a class="navbar-brand" href="{{route('home')}}" style="font-size: 15px;" >
                     <img src="../imgs/wlogo.png" height="40" alt="Konza Technopolis">
                     Konza National Data Center
@@ -102,8 +102,8 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="{{route('home')}}" >Home</a>
+                        <li class="nav-item" >
+                            <a class="nav-link {{ request()->routeIs('home') ? 'active':'' }}" aria-current="page" href="{{route('home')}}"  >Home</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
