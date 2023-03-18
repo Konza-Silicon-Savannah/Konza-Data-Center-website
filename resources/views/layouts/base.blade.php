@@ -93,7 +93,7 @@
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="{{route('home')}}">
-                    <img src="../imgs/wlogo.png" height="30" alt="Konza Technopolis">
+                    <img src="../imgs/wlogo.png" height="40" alt="Konza Technopolis">
                     Konza National Data Center
                 </a>
 
