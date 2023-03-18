@@ -4,15 +4,15 @@
 <!-- ==========Header=========== -->
 
 <div class="row header mb-5">
-
-    <div class="container header-text overlay">
-        <h1>One Stop Shop for all your cloud needs.</h1>
-        <p>
-            Are you in need of web hosting using the conventional cpanel or are you looking for fast, optimized and processor accelearted compute option? Look no further. Konza cloud has all these offerings provisioned for you as easy as pie
-        </p>
-        <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#callbackmodal">
-            Request a Call Back
-        </button>
+    <div class="col-md-7">
+        <div class="container header-text">
+            <h1>One Stop Shop for all your cloud needs.</h1>
+            <p>
+                Are you in need of web hosting using the conventional cpanel or are you looking for fast, optimized and processor accelearted compute option? Look no further. Konza cloud has all these offerings provisioned for you as easy as pie
+            </p>
+            <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#callbackmodal">
+                Request a Call Back
+            </button>
 
         <!-- Modal -->
         <div class="modal fade" id="callbackmodal" tabindex="-1" aria-labelledby="callbackmodalLabel" aria-hidden="true">
