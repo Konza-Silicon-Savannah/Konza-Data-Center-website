@@ -88,6 +88,10 @@ class ProductController extends Controller
         return  redirect('/')->with('message','Sumitted successfully.');
     }
 
+    public function hms()
+    {
+        return view('services.hms');
+    }
 
     
 

@@ -23,6 +23,9 @@ use App\Http\Controllers\ProductController;
 Route::get('/cloud', [ProductController::class,'cloudServices'])->name('products.cloud');
 Route::get('/colocation', [ProductController::class,'colocation'])->name('products.colocation');
 
+Route::get('/hms', [ProductController::class,'hms'])->name('hms');
+
+
 Route::get('/checkout', [ProductController::class,'checkoutForm'])->name('products. checkout');
 Route::post('/checkout', [ProductController::class,'checkoutSubmit']);
 Route::get('sendMail',[ProductController::class,'checkoutSubmit']);
@@ -37,7 +40,7 @@ Route::post('remove', [CartController::class, 'removeCart'])->name('cart.remove'
 Route::post('clear', [CartController::class, 'clearAllCart'])->name('cart.clear');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('admin.dashboard2');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

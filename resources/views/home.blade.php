@@ -3,8 +3,8 @@
 @section('content')
 <!-- ==========Header=========== -->
 <div class="row header mb-5">
-    <div class="col-md-7">
-        <div class="container header-text">
+    <div class="col-md-12">
+        <div class="container header-text overlay">
             <h1>One Stop Shop for all your cloud needs.</h1>
             <p>
                 Are you in need of web hosting using the conventional cpanel or are you looking for fast, optimized and processor accelearted compute option? Look no further. Konza cloud has all these offerings provisioned for you as easy as pie
@@ -29,9 +29,9 @@
             </div>
         </div>
     </div>
-    <div class="col-md-5">
-        <img src="../imgs/Group 2.png" height="400px" class="mt-5" />
-    </div>
+    <!-- <div class="col-md-5">
+        <img src="../imgs/woofer.png" height="400px" class="mt-5" />
+    </div> -->
 
 </div>
 <!-- ==========Header=========== -->
@@ -221,6 +221,28 @@
 
 </div>
 <!-- ==========Contact Us=========== -->
+ <footer class="py-2 mt-4 mx-0 bg-success mt-5 footer">
+        <ul class="nav justify-content-center border-bottom pb-3">
+            <li class="nav-item"><a href="{{route('home')}}" class="nav-link px-2 text-white">Home</a></li>
+            <li class="nav-item"><a href="{{route('products.cloud')}}" class="nav-link px-2 text-white">Cloud services</a></li>
+            <li class="nav-item"><a href="{{route('products.colocation')}}" class="nav-link px-2 text-white">Colocation</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Web hosting</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+            @auth
+            <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link px-2 text-white">Dashboard</a></li>
+            @else
+            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link px-2 text-white">Login</a></li>
+            @endauth
+
+        </ul>
+        <p class="text-center text-white">
+            &copy; <script>
+                document.write(new Date().getFullYear())
+            </script>
+            , Konza Technopolis
+        </p>
+    </footer>
 
 
 @endsection

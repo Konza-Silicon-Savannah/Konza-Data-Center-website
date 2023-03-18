@@ -24,6 +24,13 @@
     <link rel="icon" type="image/x-icon" href="../imgs/dc-logo.png">
     <title>KNDC</title>
     <style type="text/css">
+        /* .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        } */
+
         * {
             margin: 0;
             padding: 0;
@@ -82,11 +89,11 @@
 <body>
     <!-- ==========Navabar=========== -->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light  pe-5 fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark  pe-5 fixed-top" style="background-color: #008234;">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="{{route('home')}}">
-                    <img src="../imgs/dc-logo.png" height="30" alt="Konza Technopolis">
+                    <img src="../imgs/wlogo.png" height="30" alt="Konza Technopolis">
                     Konza National Data Center
                 </a>
 
@@ -152,7 +159,7 @@
                                         <div class="col-megamenu">
                                             <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">SaaS Solutions</a></h5>
                                             <ul class="list-unstyled text-black">
-                                                <li><a href="#" class="megmenuitems">Hospital Management System</a></li>
+                                                <li><a href="{{route('hms')}}" class="megmenuitems">Hospital Management System</a></li>
                                                 <li><a href="#" class="megmenuitems">Contact Center Solution</a></li>
                                                 <li><a href="#" class="megmenuitems">Zimbra Email Solution</a></li>
                                                 <li><a href="#" class="megmenuitems">Revenue Management & Collection System</a></li>
@@ -198,7 +205,7 @@
     @yield('content')
     <!-- ==========Footer=========== -->
 
-    <footer class="py-2 mt-4 mx-0 bg-success mt-5">
+    <!-- <footer class="py-2 mt-4 mx-0 bg-success mt-5 footer">
         <ul class="nav justify-content-center border-bottom pb-3">
             <li class="nav-item"><a href="{{route('home')}}" class="nav-link px-2 text-white">Home</a></li>
             <li class="nav-item"><a href="{{route('products.cloud')}}" class="nav-link px-2 text-white">Cloud services</a></li>
@@ -206,7 +213,12 @@
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Web hosting</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
             <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Login</a></li>
+            @auth
+            <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link px-2 text-white">Dashboard</a></li>
+            @else
+            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link px-2 text-white">Login</a></li>
+            @endauth
+
         </ul>
         <p class="text-center text-white">
             &copy; <script>
@@ -214,7 +226,7 @@
             </script>
             , Konza Technopolis
         </p>
-    </footer>
+    </footer> -->
     <!-- ==========Footer=========== -->
 
     <script>
