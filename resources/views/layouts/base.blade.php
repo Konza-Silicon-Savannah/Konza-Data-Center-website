@@ -89,10 +89,10 @@
 <body>
     <!-- ==========Navabar=========== -->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark  pe-5 fixed-top" style="background-color: #008234;">
+        <nav class="navbar navbar-expand-lg navbar-dark  pe-5 fixed-top" style="background-color: #008234;font-size: 15px;">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="{{route('home')}}">
+                <a class="navbar-brand" href="{{route('home')}}" style="font-size: 15px;" >
                     <img src="../imgs/wlogo.png" height="40" alt="Konza Technopolis">
                     Konza National Data Center
                 </a>
@@ -103,7 +103,7 @@
                 <div class="collapse navbar-collapse " id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="{{route('home')}}" style="color: black;">Home</a>
+                            <a class="nav-link" aria-current="page" href="{{route('home')}}" >Home</a>
                         </li>
                         <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -123,7 +123,7 @@
                             </ul>
                         </li> -->
                         <li class="nav-item dropdown has-megamenu">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" style="color: black;"> Services </a>
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" > Services </a>
                             <div class="dropdown-menu megamenu shadow" role="menu">
                                 <div class="row g-3 ">
                                     <div class="col-lg-3 col-12">
@@ -173,11 +173,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black;">About</a>
+                            <a class="nav-link" href="#" >About</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: black;">Contact Us</a>
+                            <a class="nav-link" href="#" >Contact Us</a>
                         </li>
                         <li>
                             <a class="nav-item" href="{{ route('cart.list') }}">

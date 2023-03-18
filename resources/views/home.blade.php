@@ -2,33 +2,34 @@
 
 @section('content')
 <!-- ==========Header=========== -->
-<div class="row header mb-5">
-    <div class="col-md-12">
-        <div class="container header-text overlay">
-            <h1>One Stop Shop for all your cloud needs.</h1>
-            <p>
-                Are you in need of web hosting using the conventional cpanel or are you looking for fast, optimized and processor accelearted compute option? Look no further. Konza cloud has all these offerings provisioned for you as easy as pie
-            </p>
-            <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#callbackmodal">
-                Request a Call Back
-            </button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="callbackmodal" tabindex="-1" aria-labelledby="callbackmodalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="callbackmodalLabel">Request a call back</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            @include('contactform')
-                        </div>
+<div class="row header mb-5">
+
+    <div class="container header-text overlay">
+        <h1>One Stop Shop for all your cloud needs.</h1>
+        <p>
+            Are you in need of web hosting using the conventional cpanel or are you looking for fast, optimized and processor accelearted compute option? Look no further. Konza cloud has all these offerings provisioned for you as easy as pie
+        </p>
+        <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#callbackmodal">
+            Request a Call Back
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="callbackmodal" tabindex="-1" aria-labelledby="callbackmodalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="callbackmodalLabel">Request a call back</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        @include('contactform')
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- <div class="col-md-5">
         <img src="../imgs/woofer.png" height="400px" class="mt-5" />
     </div> -->
@@ -97,13 +98,13 @@
         <p><span style="font-style: italic;font-weight: bold;">Mission:</span>To develop a sustainable smart city and innovation ecosystem contributing to Kenya’s knowledge-based economy.</p>
 
     </div>
-    
+
     <div class="row">
         <div class="col-md-6">
             <img src="../imgs/kndc.jpg" class="img-fluid" />
         </div>
         <div class="col-md-6" style="  line-height: 2;">
-            
+
             <p>
                 Konza National Data Center and Smart City facilities project is being implemented by the Ministry of ICT through Konza Technopolis Development Authority (KoTDA). The project is being executed as a priority for Phase I of Konza Technopolis implementation that will ensure that Konza is able to carry out the core functions of a smart city. In addition, it will be a key enabler towards Kenya’s digital economy and is modelled to support data, voice, video, services, systems and applications.
             </p>
@@ -221,28 +222,28 @@
 
 </div>
 <!-- ==========Contact Us=========== -->
- <footer class="py-2 mt-4 mx-0 bg-success mt-5 footer">
-        <ul class="nav justify-content-center border-bottom pb-3">
-            <li class="nav-item"><a href="{{route('home')}}" class="nav-link px-2 text-white">Home</a></li>
-            <li class="nav-item"><a href="{{route('products.cloud')}}" class="nav-link px-2 text-white">Cloud services</a></li>
-            <li class="nav-item"><a href="{{route('products.colocation')}}" class="nav-link px-2 text-white">Colocation</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Web hosting</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
-            @auth
-            <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link px-2 text-white">Dashboard</a></li>
-            @else
-            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link px-2 text-white">Login</a></li>
-            @endauth
+<footer class="py-2 mt-4 mx-0 bg-success mt-5 footer">
+    <ul class="nav justify-content-center border-bottom pb-3">
+        <li class="nav-item"><a href="{{route('home')}}" class="nav-link px-2 text-white">Home</a></li>
+        <li class="nav-item"><a href="{{route('products.cloud')}}" class="nav-link px-2 text-white">Cloud services</a></li>
+        <li class="nav-item"><a href="{{route('products.colocation')}}" class="nav-link px-2 text-white">Colocation</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Web hosting</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+        @auth
+        <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link px-2 text-white">Dashboard</a></li>
+        @else
+        <li class="nav-item"><a href="{{ route('login') }}" class="nav-link px-2 text-white">Login</a></li>
+        @endauth
 
-        </ul>
-        <p class="text-center text-white">
-            &copy; <script>
-                document.write(new Date().getFullYear())
-            </script>
-            , Konza Technopolis
-        </p>
-    </footer>
+    </ul>
+    <p class="text-center text-white">
+        &copy; <script>
+            document.write(new Date().getFullYear())
+        </script>
+        , Konza Technopolis
+    </p>
+</footer>
 
 
 @endsection
