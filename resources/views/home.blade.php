@@ -263,7 +263,7 @@
 
 </div>
 <!-- ==========Contact Us=========== -->
-<footer class="py-2 mt-4 mx-0 bg-successes mt-5 footer">
+<footer class="py-2 mt-4 mx-0 bg-dark mt-5">
     <ul class="nav justify-content-center border-bottom pb-3">
         <li class="nav-item"><a href="{{route('home')}}" class="nav-link px-2 text-white">Home</a></li>
         <li class="nav-item"><a href="{{route('products.cloud')}}" class="nav-link px-2 text-white">Cloud services</a></li>

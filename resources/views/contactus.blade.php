@@ -26,7 +26,7 @@
         </div>
     </div>
 </div>
-    <footer class="py-2 mt-4 mx-0 bg-successes mt-5 footer">
+    <footer class="py-2 mt-4 mx-0 bg-dark mt-5 footer">
         <p class="text-center text-white">
             &copy; <script>
                 document.write(new Date().getFullYear())
