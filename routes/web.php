@@ -25,6 +25,14 @@ Route::get('/colocation', [ProductController::class,'colocation'])->name('produc
 
 Route::get('/hms', [ProductController::class,'hms'])->name('hms');
 
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('/contact-us', function () {
+    return view('contactus');
+})->name('contactus');
+
 
 Route::get('/checkout', [ProductController::class,'checkoutForm'])->name('products. checkout');
 Route::post('/checkout', [ProductController::class,'checkoutSubmit']);

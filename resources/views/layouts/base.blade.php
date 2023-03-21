@@ -24,12 +24,12 @@
     <link rel="icon" type="image/x-icon" href="../imgs/dc-logo.png">
     <title>KNDC</title>
     <style type="text/css">
-        /* .footer {
+        .footer {
             position: fixed;
             left: 0;
             bottom: 0;
             width: 100%;
-        } */
+        }
 
         * {
             margin: 0;
@@ -173,11 +173,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >About</a>
+                            <a class="nav-link {{ request()->routeIs('about') ? 'active':'' }}" href="{{route('about')}}" >About</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#" >Contact Us</a>
+                            <a class="nav-link {{ request()->routeIs('contactus') ? 'active':'' }}" href="{{route('contactus')}}" >Contact Us</a>
                         </li>
                         <li>
                             <a class="nav-item" href="{{ route('cart.list') }}">

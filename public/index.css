@@ -50,6 +50,18 @@ body{
 
 /* ==========Services=========== */
 
+.servicecard{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+.servicecard:hover{
+    box-shadow: 5px 6px 6px 2px #e9ecef;
+    transform: scale(1.1);
+}
+.btn.servicecard:hover{
+    background-color: white;
+}
 /* ==========Services=========== */
 
 /* ==========About Us=========== */

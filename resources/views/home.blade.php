@@ -40,59 +40,87 @@
 
 <!-- ==========Services=========== -->
 <div class="container mt-3">
-    <div class="row text-center">
-        <h1>Our Services</h1>
+    <div class="row text-center mx-auto">
+        <h1>Our <span style="color:#007a37;">Services</span></h1>
         <p>~What do we offer~</p>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card shadow">
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card shadow servicecard ">
                     <!-- <img class="card-img-top" src="../imgs/clouds.jpg" height="180px" /> -->
-                    <i class="bi bi-cloud" style="font-size: 120px; color:#007a37;"></i>
-                    <div class="card-body">
-                        <h4>Cloud Servers</h4>
+                    <i class="bi bi-cloud" style="font-size: 60px; color:#007a37;"></i>
+                    <div class="card-body d-flex flex-column">
+                        <h5>Cloud Servers</h5>
                         <p class="card-text">Konza Virtual Machines is a cloud computing service that allows users to rent virtual machines and access computing resources over the internet.</p>
-                        <a href="{{url('cloud')}}" class="btn bg-successes text-white">Subscribe</a>
+                        <a href="{{url('cloud')}}" class="btn bg-successes text-white mt-auto">Subscribe</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card shadow">
-                    <i class="bi bi-hdd-rack" style="font-size: 120px; color:#007a37;"></i>
-                    <div class="card-body">
-                        <h4>Colocation</h4>
-                        <p class="card-text">Konza National Data Center provides adaptable colocation services to accommodate a variety of businesses' demands, from small to large.</p>
-                        <a href="#" class="btn bg-successes text-white">Subscribe</a>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card shadow servicecard ">
+                    <i class="bi bi-hdd-rack" style="font-size: 60px; color:#007a37;"></i>
+                    <div class="card-body d-flex flex-column">
+                        <h5>Colocation</h5>
+                        <p class="card-text">
+                            Konza National Data Center provides adaptable colocation services to accommodate a variety of businesses' demands, from small to large.
+                        </p>
+                        <a href="#" class="btn bg-successes text-white mt-auto">Subscribe</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3 d-flex align-items-stretch">
 
-                <div class="card shadow">
-                    <i class="bi bi-cloud-upload" style="font-size: 120px; color:#007a37;"></i>
-                    <div class="card-body">
-                        <h4>Web Hosting</h4>
+                <div class="card shadow servicecard">
+                    <i class="bi bi-cloud-upload" style="font-size: 60px; color:#007a37;"></i>
+                    <div class="card-body d-flex flex-column">
+                        <h5>Web Hosting</h5>
                         <p class="card-text">Konza Data Center's web hosting services are designed to help businesses and individuals establish an online presence quickly and easily.</p>
-                        <a href="#" class="btn bg-successes text-white">Subscribe</a>
+                        <a href="#" class="btn bg-successes text-white mt-auto">Subscribe</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-3">
-                <div class="card shadow">
-                    <i class="bi bi-back" style="font-size: 120px; color:#007a37;"></i>
-                    <div class="card-body">
-                        <h3>Back-Up as a Service ( BaaS)</h3>
-                        <p class="card-text">This  is a cloud-based service that provides businesses and organizations with a secure and reliable way to backup and restore their critical data</p>
-                        <a href="#" class="btn bg-successes text-white">Explore</a>
+            <div class="col-md-3 d-flex align-items-stretch">
+                <div class="card shadow servicecard">
+                    <i class="bi bi-back" style="font-size: 60px; color:#007a37;"></i>
+                    <div class="card-body d-flex flex-column">
+                        <h5>Back-Up as a Service ( BaaS)</h5>
+                        <p class="card-text">This is a cloud-based service that provides businesses and organizations with a secure and reliable way to backup and restore their critical data</p>
+                        <a href="#" class="btn bg-successes text-white mt-auto">Explore</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-3">
-                <div class="card shadow">
-                    <i class="bi bi-code-square" style="font-size: 120px; color:#007a37;"></i>
-                    <div class="card-body">
-                        <h3> KoTDA SaaS Solutions. </h3>
+            <div class="col-md-3 mt-3 d-flex align-items-stretch">
+                <div class="card shadow servicecard">
+                    <i class="bi bi-code-square" style="font-size: 60px; color:#007a37;"></i>
+                    <div class="card-body d-flex flex-column">
+                        <h5> Software as a Service(SaaS) </h5>
                         <p class="card-text">Konza National Data Centre has developed and is maintaining cloud application softwares, automatic software updates, and software availability to its customers via the internet on a pay-as-you-go basis</p>
-                        <a href="#" class="btn bg-successes text-white">Explore</a>
+                        <a href="#" class="btn bg-successes text-white mt-auto">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-3 d-flex align-items-stretch">
+                <div class="card shadow servicecard">
+                    <i class="bi bi-display" style="font-size: 60px; color:#007a37;"></i>
+                        <div class="card-body d-flex flex-column">
+                            <h5> Virtual Desktop Infrastructure </h5>
+                            <p class="card-text">
+                                Virtual Desktop Infrastructure (VDI) is a cloud-based service that enables users to access virtual desktops and applications from any device with an internet connection.
+                            </p>
+                            <a href="#" class="btn bg-successes text-white mt-auto">Explore</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-3 d-flex align-items-stretch">
+                <div class="card shadow servicecard">
+                    <i class="bi bi-code-square" style="font-size: 60px; color:#007a37;"></i>
+                    <i class="bi bi-person-video"></i>
+                    <div class="card-body d-flex flex-column">
+                        <h5> Video Conferencing Infrastructure </h5>
+                        
+                        <p class="card-text">
+                            The Data Center's Video Conference is a platform that allows users to conduct virtual meetings and conferences from anywhere in the world.
+                        </p>
+                        <a href="#" class="btn bg-successes text-white mt-auto">Explore</a>
                     </div>
                 </div>
             </div>
@@ -105,7 +133,7 @@
 <!-- ==========About Us=========== -->
 <div class="container mt-5">
     <div class="row text-center">
-        <h1>About Us</h1>
+        <h1><span style="color:#007a37;">About</span> Us</h1>
         <p>~Who are we~</p>
         <p><span style="font-style: italic;font-weight: bold;">Vision:</span>To be a global technology and innovation hub.</p>
         <p><span style="font-style: italic;font-weight: bold;">Mission:</span>To develop a sustainable smart city and innovation ecosystem contributing to Kenya’s knowledge-based economy.</p>
@@ -206,7 +234,7 @@
 <!-- ==========Contact Us=========== -->
 <div class="container mt-5 ">
     <div class="row text-center">
-        <h1>Contact Us</h1>
+        <h1>Contact <span style="color:#007a37;">Us</span></h1>
     </div>
 
     <div class="row mx-3">
@@ -235,7 +263,7 @@
 
 </div>
 <!-- ==========Contact Us=========== -->
-<footer class="py-2 mt-4 mx-0 bg-success mt-5 footer">
+<footer class="py-2 mt-4 mx-0 bg-successes mt-5 footer">
     <ul class="nav justify-content-center border-bottom pb-3">
         <li class="nav-item"><a href="{{route('home')}}" class="nav-link px-2 text-white">Home</a></li>
         <li class="nav-item"><a href="{{route('products.cloud')}}" class="nav-link px-2 text-white">Cloud services</a></li>
