@@ -10,7 +10,7 @@ body{
     overflow-x: hidden;
     /* font-family: 'Tw Cen MT', sans-serif; */
     /* font-family: 'Nunito', sans-serif;     */
-    font-family: 'Futura PT', sans-serif;
+    /* font-family: 'Futura PT', sans-serif; */
     scroll-behavior: smooth;
                                                 
 }
@@ -35,7 +35,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    color: #fff;
+    
     
     padding-top: 50px;
 
@@ -44,7 +44,7 @@ body{
 {
     padding: 100px;
     text-align: center;
-    color: white;
+
 }
 /* ==========Header=========== */
 

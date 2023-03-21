@@ -6,11 +6,11 @@
 <div class="row header mb-5">
 
     <div class="container header-text">
-        <h1>One Stop Shop for all your cloud needs.</h1>
-        <p>
+        <h1 class="text-white">One Stop Shop for all your cloud needs.</h1>
+        <p class="text-white">
             Are you in need of web hosting using the conventional cpanel or are you looking for fast, optimized and processor accelearted compute option? Look no further. Konza cloud has all these offerings provisioned for you as easy as pie
         </p>
-        <button type="button" class="btn btn-outline-success mt-3" data-bs-toggle="modal" data-bs-target="#callbackmodal">
+        <button type="button" class="btn bg-successes text-white mt-3" data-bs-toggle="modal" data-bs-target="#callbackmodal">
             Request a Call Back
         </button>
 
@@ -44,43 +44,55 @@
         <h1>Our Services</h1>
         <p>~What do we offer~</p>
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <div class="card shadow">
-                    <img class="card-img-top" src="../imgs/clouds.jpg" height="180px" />
+                    <!-- <img class="card-img-top" src="../imgs/clouds.jpg" height="180px" /> -->
+                    <i class="bi bi-cloud" style="font-size: 120px; color:#007a37;"></i>
                     <div class="card-body">
-                        <h3>Cloud Storage</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="{{url('cloud')}}" class="btn btn-success">Subscribe</a>
+                        <h4>Cloud Servers</h4>
+                        <p class="card-text">Konza Virtual Machines is a cloud computing service that allows users to rent virtual machines and access computing resources over the internet.</p>
+                        <a href="{{url('cloud')}}" class="btn bg-successes text-white">Subscribe</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <img class="card-img-top" src="../imgs/server.jpg" height="180px" />
+            <div class="col-md-4">
                 <div class="card shadow">
+                    <i class="bi bi-hdd-rack" style="font-size: 120px; color:#007a37;"></i>
                     <div class="card-body">
-                        <h3>Colocation</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-success">Subscribe</a>
+                        <h4>Colocation</h4>
+                        <p class="card-text">Konza National Data Center provides adaptable colocation services to accommodate a variety of businesses' demands, from small to large.</p>
+                        <a href="#" class="btn bg-successes text-white">Subscribe</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <img class="card-img-top" src="../imgs/domain.jpg" height="180px" />
+            <div class="col-md-4">
+
                 <div class="card shadow">
+                    <i class="bi bi-cloud-upload" style="font-size: 120px; color:#007a37;"></i>
                     <div class="card-body">
-                        <h3>Web hosting</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-success">Subscribe</a>
+                        <h4>Web Hosting</h4>
+                        <p class="card-text">Konza Data Center's web hosting services are designed to help businesses and individuals establish an online presence quickly and easily.</p>
+                        <a href="#" class="btn bg-successes text-white">Subscribe</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <img class="card-img-top" src="../imgs/email.png" height="180px" />
+            <div class="col-md-4 mt-3">
                 <div class="card shadow">
+                    <i class="bi bi-back" style="font-size: 120px; color:#007a37;"></i>
                     <div class="card-body">
-                        <h3>Email Hosting</h3>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-success">Explore</a>
+                        <h3>Back-Up as a Service ( BaaS)</h3>
+                        <p class="card-text">This  is a cloud-based service that provides businesses and organizations with a secure and reliable way to backup and restore their critical data</p>
+                        <a href="#" class="btn bg-successes text-white">Explore</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="card shadow">
+                    <i class="bi bi-code-square" style="font-size: 120px; color:#007a37;"></i>
+                    <div class="card-body">
+                        <h3> KoTDA SaaS Solutions. </h3>
+                        <p class="card-text">Konza National Data Centre has developed and is maintaining cloud application softwares, automatic software updates, and software availability to its customers via the internet on a pay-as-you-go basis</p>
+                        <a href="#" class="btn bg-successes text-white">Explore</a>
                     </div>
                 </div>
             </div>

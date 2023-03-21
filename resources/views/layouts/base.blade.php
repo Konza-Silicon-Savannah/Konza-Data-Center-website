@@ -89,7 +89,7 @@
 <body>
     <!-- ==========Navabar=========== -->
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-dark  pe-5 fixed-top" style="background-color: #008234;font-size: 15px;">
+        <nav class="navbar navbar-expand-lg navbar-dark  pe-5 fixed-top bg-successes" style="font-size: 15px;">
             <div class="container-fluid">
           
                 <a class="navbar-brand" href="{{route('home')}}" style="font-size: 15px;" >
