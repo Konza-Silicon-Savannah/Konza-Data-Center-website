@@ -13,6 +13,6 @@ class Product extends Model
         'service',
         'name',
         'description',
-        'price',
+        'quantity',
     ];
 }
