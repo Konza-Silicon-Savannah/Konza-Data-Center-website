@@ -1,7 +1,10 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="container" style="margin-top: 70px;">
+<h1 class="text-center" style="margin-top: 70px;">Contact <span style="color:#007a37;">Us</span></h1>
+<div class="container d-flex justify-content-center" >
+
+    
     <div class="row">
         <div class="col-md-6">
             <!-- contact Us form -->
@@ -26,14 +29,14 @@
         </div>
     </div>
 </div>
-    <footer class="py-2 mt-4 mx-0 bg-dark mt-5 footer">
-        <p class="text-center text-white">
-            &copy; <script>
-                document.write(new Date().getFullYear())
-            </script>
-            , Konza Technopolis
-        </p>
-    </footer>
+<footer class="py-2 mt-4 mx-0 bg-dark mt-5 footer">
+    <p class="text-center text-white">
+        &copy; <script>
+            document.write(new Date().getFullYear())
+        </script>
+        , Konza Technopolis
+    </p>
+</footer>
 
 
-    @endsection
+@endsection
