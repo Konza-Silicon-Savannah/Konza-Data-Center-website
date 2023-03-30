@@ -23,7 +23,22 @@ use App\Http\Controllers\ProductController;
 Route::get('/cloud', [ProductController::class,'cloudServices'])->name('products.cloud');
 Route::get('/colocation', [ProductController::class,'colocation'])->name('products.colocation');
 
-Route::get('/hms', [ProductController::class,'hms'])->name('hms');
+Route::get('/hospital-management-system', [ProductController::class,'hms'])->name('hms');
+Route::get('/contact-center', function () {
+    return view('services.contactcenter');
+})->name('contactcenter');
+Route::get('/zimbra-mail', function () {
+    return view('services.zimbra');
+})->name('zimbra');
+Route::get('/revenue-collection-system', function () {
+    return view('services.revenue');
+})->name('revenue');
+Route::get('/e-board', function () {
+    return view('services.eboard');
+})->name('eboard');
+
+
+
 
 Route::get('/about', function () {
     return view('about');

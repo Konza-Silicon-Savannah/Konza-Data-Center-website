@@ -91,86 +91,77 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg navbar-dark  pe-5 fixed-top bg-successes" style="font-size: 15px;">
             <div class="container-fluid">
-          
+                <!-- ==========Logo=========== -->
                 <a class="navbar-brand" href="{{route('home')}}" style="font-size: 15px;" >
                     <img src="../imgs/wlogo.png" height="40" alt="Konza Technopolis">
                     Konza National Data Center
                 </a>
+                <!-- ==========Logo=========== -->
 
+                <!-- ==========Toggle button=========== -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- ==========Toggle button=========== -->
+
                 <div class="collapse navbar-collapse " id="navbarNavDropdown">
                     <ul class="navbar-nav ms-auto">
+                        <!-- ==========Home=========== -->
                         <li class="nav-item" >
                             <a class="nav-link {{ request()->routeIs('home') ? 'active':'' }}" aria-current="page" href="{{route('home')}}"  >Home</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
+                        <!-- ==========Home=========== -->
 
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="{{url('cloud')}}">Cloud Services</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="{{route('products.colocation')}}">Colocation</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Domain hosting</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Email hosting</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Solutions</a></li>
-                            </ul>
-                        </li> -->
-                        <li class="nav-item dropdown has-megamenu">
+                        <!-- ==========Services Megamenu=========== -->
+                        <li class="nav-item dropdown has-megamenu ">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" > Services </a>
                             <div class="dropdown-menu megamenu shadow" role="menu">
-                                <div class="row g-3 ">
-                                    <div class="col-lg-3 col-12">
-                                        <div class="col-megamenu" style="    margin-left: 60px; margin-right: 40px;">
-                                            <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">Cloud Services</a></h5>
+                                <div class="row g-3 px-2 ">
+                                    <!-- ==========Cloud Services=========== -->
+                                    <div class="col-lg-4 col-12">
+                                        <div class="col-megamenu" style="margin-right: 40px;">
+                                            <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">Data Center Services</a></h5>
                                             <ul class="list-unstyled ">
-                                                <li><a href="#" class="megmenuitems">Virtual Machines</a></li>
-                                                <li><a href="#" class="megmenuitems">Bare Metal Servers</a></li>
-                                                <li><a href="#" class="megmenuitems">Virtual Desktop Infrastructre</a></li>
-                                                <li><a href="#" class="megmenuitems">Web Hosting</a></li>
-                                                <li><a href="#" class="megmenuitems">Video Conferencing Infrastructure</a></li>
-                                            </ul>
-                                        </div> <!-- col-megamenu.// -->
-                                    </div><!-- end col-3 -->
-                                    <div class="col-lg-3 col-12">
-                                        <div class="col-megamenu">
-                                            <h5 class="title"><a href="{{route('products.colocation')}}" style="color:#008234;">Data Center Colocation</a></h5>
-                                            <ul class="list-unstyled">
+                                                <li><a href="{{url('cloud')}}" class="megmenuitems">Konza Cloud(VMs)</a></li>
+                                                <li><a href="{{url('cloud')}}" class="megmenuitems">Virtual Desktop Infrastructure</a></li>
                                                 <li><a href="{{route('products.colocation')}}" class="megmenuitems">Colocation</a></li>
+                                                <li><a href="{{url('cloud')}}" class="megmenuitems">Web Hosting</a></li>
                                             </ul>
-                                        </div> <!-- col-megamenu.// -->
-                                    </div><!-- end col-3 -->
-                                    <div class="col-lg-3 col-12">
-                                        <div class="col-megamenu">
-                                            <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">Backup as a Service</a></h5>
-
-                                            <ul class="list-unstyled">
-                                                <li><a href="#" class="megmenuitems">Custom Menu</a></li>
-                                            </ul>
-                                        </div> <!-- col-megamenu.// -->
+                                        </div> 
                                     </div>
-                                    <div class="col-lg-3 col-12">
+                                    <!-- ==========Cloud Services=========== -->
+
+                                    <!-- ==========SaaS=========== -->                                   
+                                    <div class="col-lg-4 col-12">
                                         <div class="col-megamenu">
-                                            <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">SaaS Solutions</a></h5>
+                                            <h5 class="title"><a href="" style="color:#008234;">SaaS Solutions</a></h5>
                                             <ul class="list-unstyled text-black">
                                                 <li><a href="{{route('hms')}}" class="megmenuitems">Hospital Management System</a></li>
-                                                <li><a href="#" class="megmenuitems">Contact Center Solution</a></li>
-                                                <li><a href="#" class="megmenuitems">Zimbra Email Solution</a></li>
-                                                <li><a href="#" class="megmenuitems">Revenue Management & Collection System</a></li>
-                                                <li><a href="#" class="megmenuitems">E-Board Solution</a></li>
+                                                <li><a href="{{route('contactcenter')}}" class="megmenuitems">Contact Center Solution</a></li>
+                                                <li><a href="{{route('zimbra')}}" class="megmenuitems">Zimbra Email Solution</a></li>
+                                                <li><a href="{{route('revenue')}}" class="megmenuitems">Revenue Management & Collection System</a></li>
+                                                <li><a href="{{route('eboard')}}" class="megmenuitems">E-Board Solution</a></li>
 
                                             </ul>
-                                        </div> <!-- col-megamenu.// -->
-                                    </div><!-- end col-3 -->
-                                </div><!-- end row -->
-                            </div> <!-- dropdown-mega-menu.// -->
+                                        </div>
+                                    </div>
+                                    <!-- ==========SaaS=========== -->                                   
+
+                                    <!-- ==========Other=========== -->                                   
+                                    <div class="col-lg-4 col-12">
+                                        <div class="col-megamenu">
+                                            <h5 class="title"><a href="" style="color:#008234;">Other Service</a></h5>
+
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="megmenuitems">Backup as a Service</a></li>
+                                            </ul>
+                                        </div> 
+                                    </div>
+                                    <!-- ==========Other=========== -->                                   
+                                </div>
                         </li>
+                        <!-- ==========Services Megamenu=========== -->
+
 
                         <li class="nav-item">
                             <a class="nav-link {{ request()->routeIs('about') ? 'active':'' }}" href="{{route('about')}}" >About</a>

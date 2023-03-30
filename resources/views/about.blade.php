@@ -1,19 +1,19 @@
 @extends('layouts.base')
 
 @section('content')
-<div class="container" style="margin-top: 70px;">
+<div class="" style="margin-top: 65px;">
     <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner px-5 mx-5 fs-5">
+        <div class="carousel-inner   fs-5">
             <div class="carousel-item active ">
                 <img src="imgs/kndc.jpg" height="400px" class="d-block w-100" style="object-fit: cover;" />
-                <div class="carousel-caption">
+                <!-- <div class="carousel-caption">
                     hello
-                </div>
+                </div> -->
             </div>
             <div class="carousel-item ">
                 <img src="imgs/kndc1.jpg" height="400px" class="d-block w-100" style="object-fit: cover;" />
@@ -112,7 +112,7 @@
         </li>
     </ol>
 </div>
-<footer class="py-2 mt-4 mx-0 bg-successes mt-5">
+<footer class="py-2 mt-4 mx-0 bg-dark mt-5">
     <p class="text-center text-white">
         &copy; <script>
             document.write(new Date().getFullYear())

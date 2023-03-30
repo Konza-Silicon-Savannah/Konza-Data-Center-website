@@ -208,7 +208,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner px-5 mx-5 fs-5">
             <div class="carousel-item active ">
-                <p class="text-center ">
+                <p class="text-center">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <p class="fst-italic text-center">anonymous</p>
