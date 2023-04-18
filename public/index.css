@@ -66,11 +66,20 @@ body{
     transition: all 0.2s ease;
     cursor: pointer;
     padding-bottom: 20px;
+    margin-top: 10px;
 }
-.servicecard:hover{
-    box-shadow: 5px 6px 6px 2px #e9ecef;
-    transform: scale(1.1);
+
+@media screen and (min-width: 576px) {
+    .servicecard{
+        margin-top: 20px;
+    }
+    .servicecard:hover{
+        margin-top: 20px;
+        box-shadow: 5px 6px 6px 2px #e9ecef;
+        transform: scale(1.1);
+    }
 }
+
 .btn.servicecard:hover{
     background-color: white;
 }

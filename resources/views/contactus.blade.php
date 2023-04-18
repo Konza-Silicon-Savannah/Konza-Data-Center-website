@@ -2,16 +2,18 @@
 
 @section('content')
 <h1 class="text-center" style="margin-top: 70px;">Contact <span style="color:#007a37;">Us</span></h1>
-<div class="container d-flex justify-content-center" >
 
-    
+<div class="container d-flex justify-content-center">
+
+
     <div class="row">
         <div class="col-md-6">
             <!-- contact Us form -->
+
             @include('contactform')
             <!-- contact Us form -->
         </div>
-        <div class="col-md-6 p-5">
+        <div class="col-md-6 pt-5">
             <h6 style="color:#008234;">PHONE NUMBER</h6>
             <a href="tel:+254700515151">+254700515151</a>
             <h6 style="color:#008234;">EMAIL ADDRESS</h6>
@@ -29,7 +31,7 @@
         </div>
     </div>
 </div>
-<footer class="py-2 mt-4 mx-0 bg-dark mt-5 footer">
+<footer class="py-2 mt-4 mx-0 bg-dark mt-5 ">
     <p class="text-center text-white">
         &copy; <script>
             document.write(new Date().getFullYear())
