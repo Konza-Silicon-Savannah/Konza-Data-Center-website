@@ -114,7 +114,7 @@
 
                         <!-- ==========Services Megamenu=========== -->
                         <li class="nav-item dropdown has-megamenu ">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" > Services </a>
+                            <a class="nav-link {{ request()->routeIs('products.cloud' , 'products.colocation') ? 'active':'' }} dropdown-toggle " href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" > Services </a>
                             <div class="dropdown-menu megamenu shadow" role="menu">
                                 <div class="row g-3 px-2 ">
                                     <!-- ==========Cloud Services=========== -->
@@ -153,7 +153,7 @@
                                             <h5 class="title"><a href="" style="color:#008234;">Other Service</a></h5>
 
                                             <ul class="list-unstyled">
-                                                <li><a href="#" class="megmenuitems">Backup as a Service</a></li>
+                                                <li><a href="{{route('comingsoon')}}" class="megmenuitems">Backup as a Service</a></li>
                                             </ul>
                                         </div> 
                                     </div>

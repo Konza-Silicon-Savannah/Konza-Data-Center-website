@@ -52,7 +52,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5>Cloud Servers</h5>
                         <p class="card-text">Konza Virtual Machines is a cloud computing service that allows users to rent virtual machines and access computing resources over the internet.</p>
-                        <a href="{{url('cloud')}}" class="btn bg-successes text-white mt-auto">Subscribe</a>
+                        <a href="{{url('cloud')}}" class="btn bg-successes text-white mt-auto">Explore</a>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                         <p class="card-text">
                             Konza National Data Center provides adaptable colocation services to accommodate a variety of businesses' demands, from small to large.
                         </p>
-                        <a href="#" class="btn bg-successes text-white mt-auto">Subscribe</a>
+                        <a href="{{route('products.colocation')}}" class="btn bg-successes text-white mt-auto">Explore</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5>Web Hosting</h5>
                         <p class="card-text">Konza Data Center's web hosting services are designed to help businesses and individuals establish an online presence quickly and easily.</p>
-                        <a href="#" class="btn bg-successes text-white mt-auto">Subscribe</a>
+                        <a href="{{route('products.cloud')}}" class="btn bg-successes text-white mt-auto">Explore</a>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5>Back-Up as a Service ( BaaS)</h5>
                         <p class="card-text">This is a cloud-based service that provides businesses and organizations with a secure and reliable way to backup and restore their critical data</p>
-                        <a href="#" class="btn bg-successes text-white mt-auto">Explore</a>
+                        <a href="{{route('comingsoon')}}" class="btn bg-successes text-white mt-auto">Explore</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                     <div class="card-body d-flex flex-column">
                         <h5> Software as a Service(SaaS) </h5>
                         <p class="card-text">Konza National Data Centre has developed and is maintaining cloud application softwares, automatic software updates, and software availability to its customers via the internet on a pay-as-you-go basis</p>
-                        <a href="#" class="btn bg-successes text-white mt-auto">Explore</a>
+                        <a href="{{route('hms')}}" class="btn bg-successes text-white mt-auto">Explore</a>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                             <p class="card-text">
                                 Virtual Desktop Infrastructure (VDI) is a cloud-based service that enables users to access virtual desktops and applications from any device with an internet connection.
                             </p>
-                            <a href="#" class="btn bg-successes text-white mt-auto">Explore</a>
+                            <a href="{{route('comingsoon')}}" class="btn bg-successes text-white mt-auto">Explore</a>
                         </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                         <p class="card-text">
                             The Data Center's Video Conference is a platform that allows users to conduct virtual meetings and conferences from anywhere in the world.
                         </p>
-                        <a href="#" class="btn bg-successes text-white mt-auto">Explore</a>
+                        <a href="{{route('comingsoon')}}" class="btn bg-successes text-white mt-auto">Explore</a>
                     </div>
                 </div>
             </div>

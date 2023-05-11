@@ -130,4 +130,10 @@ class ProductController extends Controller
     {
         return view('services.hms');
     }
+
+    public function comingsoon()
+    {
+        return redirect()->back()->with('message','coming soon');
+
+    }
 }

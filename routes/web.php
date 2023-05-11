@@ -54,6 +54,8 @@ Route::post('/checkout', [ProductController::class,'checkoutSubmit']);
 Route::get('sendMail',[ProductController::class,'checkoutSubmit']);
 
 Route::post('/sendMessage',[ProductController::class,'sendMessage']);
+Route::get('/home',[ProductController::class,'comingsoon'])->name('comingsoon');
+
 
 Route::get('products', [ProductController::class, 'productList'])->name('products.list');
 Route::get('cart', [CartController::class, 'cartList'])->name('cart.list');

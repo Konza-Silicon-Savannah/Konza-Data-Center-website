@@ -38,6 +38,13 @@
 </div>
 <!-- ==========Header=========== -->
 
+<!-- buttons -->
+<div class=" mt-3 d-flex justify-content-evenly">
+    <a href="{{route('contactcenter')}}"><button type="button" class="btn btn-danger">Previous</button></a>
+    <a href="{{route('revenue')}}"><button type="button" class="btn bg-successes text-white">Next</button></a>
+</div>
+<!-- buttons -->
+
 <footer class="py-2 mt-4 mx-0 bg-dark mt-5">
     <p class="text-center text-white">
         &copy; <script>
