@@ -48,7 +48,6 @@ Route::get('/contact-us', function () {
     return view('contactus');
 })->name('contactus');
 
-
 Route::get('/checkout', [ProductController::class,'checkoutForm'])->name('products. checkout');
 Route::post('/checkout', [ProductController::class,'checkoutSubmit']);
 Route::get('sendMail',[ProductController::class,'checkoutSubmit']);

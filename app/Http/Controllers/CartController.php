@@ -11,7 +11,17 @@ class CartController extends Controller
     public function cartList()
     {
         $cartItems = \Cart::getContent();
-        // dd($cartItems);
+        $itemsnumber= count($cartItems);
+       // dd($itemsnumber);
+
+        //  if($itemsnumber == 0)
+        // {
+        //     return redirect()->back()->with('message','Add products to cart.');
+
+        // }else{
+
+        //     return view('cart', compact('cartItems'));
+        //  }
         return view('cart', compact('cartItems'));
     }
     public function addToCart(Request $request)
@@ -26,7 +36,6 @@ class CartController extends Controller
         ]);
         
         return redirect()->back()->with('message','Product is Added to Cart Successfully');
-
 
     }
     public function updateCart(Request $request)

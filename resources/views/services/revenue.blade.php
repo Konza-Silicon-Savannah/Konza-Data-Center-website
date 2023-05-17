@@ -11,8 +11,8 @@
             Konza has a Revenue Collection & Management solution that encompasses the whole revenue cycle from collection, management and reporting with business intelligence capabilities.  
             </p>
         </div>
-        <div class="col-md-6">
-            <!-- <img src="../imgs/mail.png" style="width:300px;" class="p-3 img-fluid" /> -->
+        <div class="col-md-6 mx-auto">
+            <img src="../imgs/coin.png" style="width:300px;" class="p-3 img-fluid" />
         </div>
     </div>
 </div>
@@ -20,7 +20,7 @@
 <div class="container" style="margin-top: 50px;">
     <div class="row flex">
         <div class="col-md-5">
-            <img src="../imgs/mails.png" width="500px" class="p-3 img-fluid" />
+            <img src="../imgs/hms2.png" width="500px" class="p-3 img-fluid" />
         </div>
         <div class="col-md-7">
             <h4 class="text-greens">Relevance</h4>

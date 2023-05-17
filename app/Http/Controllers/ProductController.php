@@ -41,7 +41,16 @@ class ProductController extends Controller
     {
         $cartItems = \Cart::getContent();
         // dd($cartItems);
-        return view('checkout', compact('cartItems'));
+        $itemsnumber= count($cartItems);
+        if($itemsnumber == 0)
+         {
+             return redirect()->back()->with('message','Add products to cart.');
+
+        }else{
+
+             return view('checkout', compact('cartItems'));
+          }
+       // return view('checkout', compact('cartItems'));
     }
     public function sendMessage(Request $request)
     {
