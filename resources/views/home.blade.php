@@ -272,11 +272,11 @@
         <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Web hosting</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About Us</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
-        @auth
+        <!-- @auth
         <li class="nav-item"><a href="{{ url('/dashboard') }}" class="nav-link px-2 text-white">Dashboard</a></li>
         @else
         <li class="nav-item"><a href="{{ route('login') }}" class="nav-link px-2 text-white">Login</a></li>
-        @endauth
+        @endauth -->
 
     </ul>
     <p class="text-center text-white">

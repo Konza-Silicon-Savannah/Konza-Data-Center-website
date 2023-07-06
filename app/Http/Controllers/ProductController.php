@@ -5,11 +5,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Mail;
 use App\Mail\CustomerRequirementsMail;
+use App\Mail\Messages as MailMessages;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\CustomerRequirements;
 use App\Models\messages;
 use Illuminate\Auth\Events\Validated;
+use Illuminate\Mail\Message;
 
 class ProductController extends Controller
 {
@@ -76,8 +78,16 @@ class ProductController extends Controller
             ]
         );
 
+        $maildata = [
+            'name' => $request->name,
+            'organization' => $request->organization,
+            'email' => $request->email,
+            'message' => $request->message,
+        ];
+        Mail::to('cloud@konza.go.ke')->send(new MailMessages($maildata));
+
         $message = messages::create($validatedData);
-        // dd($message);
+        //dd($validatedData);
 
         return  redirect('/')->with('message', 'Message sent.');
     }
@@ -124,7 +134,7 @@ class ProductController extends Controller
             'Comments' => $request->Comments,
         ];
         $CartItems = \Cart::getContent();
-        Mail::to('jhildah24@gmail.com')->send(new CustomerRequirementsMail($maildata, $CartItems));
+        Mail::to('cloud@konza.go.ke')->send(new CustomerRequirementsMail($maildata, $CartItems));
 
         // dd('mail sent');
 
