@@ -7,7 +7,7 @@ on:
     branches: [ "main", "master", "develop" ]
 
 jobs:
-  web-portal-tests:
+  build:
 
     runs-on: ubuntu-latest
 
