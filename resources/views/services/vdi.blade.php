@@ -1,5 +1,5 @@
 <div class="row">
-    <h6 class="fw-bold fs-4">Virtual Desktop Infrastructure</h6>
+    <h6 class="fw-bold fs-4">Desktop Infrastructure</h6>
     @foreach($vdis as $vdi)
     <div class="col-md-2">
         <div class="card mb-5 p-3  productcard shadow">

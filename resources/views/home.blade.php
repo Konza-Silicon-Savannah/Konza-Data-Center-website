@@ -201,7 +201,7 @@
 
 <!-- ==========Testimonials=========== -->
 
-<div class="container mt-5">
+<!-- <div class="container mt-5">
     <div class="row text-center">
         <h1>Testimonials</h1>
         <p>~What they say~</p>
@@ -229,7 +229,7 @@
         </div>
 
     </div>
-</div>
+</div> -->
 <!-- ==========Testimonials=========== -->
 
 <!-- ==========Contact Us=========== -->

@@ -30,7 +30,7 @@
                 Bare Metal Services
             </a> -->
             <a class="nav-link text-black" id="nav-vdi-tab" data-bs-toggle="tab" href="#nav-vdi" role="tab" aria-controls="nav-vdi" aria-selected="false">
-                Virtual Desktop Infrastructure
+               Desktop Infrastructure
             </a>
             <a class="nav-link" id="nav-webh-tab" data-bs-toggle="tab" href="#nav-webh" role="tab" aria-controls="nav-webh" aria-selected="false">
                 Web Hosting

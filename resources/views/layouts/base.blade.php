@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">\
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="Data Center, Data Centre, Konza Data Center, Colocation Kenya, Kenya Data Center.Tier III Data Center">
     <meta name="description" content="Best Data Center in Kenya, Konza National Data Center, Kenya National DAta Center">
 
@@ -126,7 +126,7 @@
                                             <h5 class="title"><a href="{{url('cloud')}}" style="color:#008234;">Data Center Services</a></h5>
                                             <ul class="list-unstyled ">
                                                 <li><a href="{{url('cloud')}}" class="megmenuitems">Konza Cloud(VMs)</a></li>
-                                                <li><a href="{{url('cloud')}}" class="megmenuitems">Virtual Desktop Infrastructure</a></li>
+                                                <li><a href="{{url('cloud')}}" class="megmenuitems">Desktop Infrastructure</a></li>
                                                 <li><a href="{{route('products.colocation')}}" class="megmenuitems">Colocation</a></li>
                                                 <li><a href="{{url('cloud')}}" class="megmenuitems">Web Hosting</a></li>
                                             </ul>
